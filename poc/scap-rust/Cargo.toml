@@ -1,0 +1,11 @@
+[package]
+name = "scap-poc"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+
+[dependencies]
+scap = "0.1.0-beta.1"
+
+[profile.release]
+opt-level = 3

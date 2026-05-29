@@ -1,0 +1,17 @@
+# Recorded output artifacts (proof-of-concept videos, may contain desktop content)
+*.mp4
+*.mov
+
+# Node
+node_modules/
+
+# Rust
+target/
+Cargo.lock
+
+# Upstream clones (GUI-only repos evaluated under poc/bettercapture and poc/azayaka)
+poc/bettercapture/BetterCapture/
+poc/azayaka/Azayaka/
+
+# macOS
+.DS_Store
