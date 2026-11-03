@@ -1,6 +1,6 @@
 # aperture-node Evaluation
 
-POC location: `/Users/davidson/workspace/video-recorder/poc/aperture-node`
+POC location: `poc/aperture-node`
 Date: 2026-05-28
 Host: macOS 15.6 (24G84), MacBookPro18,3 (Apple Silicon), Node v22.22.2
 

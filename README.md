@@ -1,6 +1,34 @@
-# video-recorder
+# mac-screen-recorder
 
-Hands-on evaluation of open-source CLI video recorders for macOS. Three working POCs, one recommendation per stack.
+<img src="docs/assets/bettercapture-menu.png" alt="BetterCapture menu with screen selection, video, and audio settings" width="360">
+
+Open [BetterCapture](https://github.com/jsattler/BetterCapture), a native macOS menu bar screen recorder, with one command:
+
+```bash
+git clone https://github.com/djson9/mac-screen-recorder.git && cd mac-screen-recorder && ./start.sh
+```
+
+Already cloned? Run `./start.sh` from the repository root.
+
+The launcher opens BetterCapture if it is installed, or installs the official Homebrew cask first. First-time installation needs [Homebrew](https://brew.sh), an Apple Silicon Mac, and macOS 15.2 or later.
+
+Click the BetterCapture icon in the menu bar, choose the screen or window to capture, and grant Screen Recording permission when macOS asks. Opening the app does not start a recording. Recordings stay on your Mac.
+
+BetterCapture is an upstream MIT-licensed app by Joshua Sattler. This repository contains the launcher and the original recorder evaluations; BetterCapture's source and license are available in its [upstream repository](https://github.com/jsattler/BetterCapture).
+
+## CLI recording
+
+To run the five-second, full-screen recording example with Node.js 20 or later:
+
+```bash
+(cd poc/aperture-node && npm ci && node record.mjs)
+```
+
+The recording is saved to `poc/aperture-node/output.mp4`. Grant your terminal Screen Recording permission in System Settings if needed. Recording files are ignored by Git.
+
+## Original evaluations
+
+The following hands-on evaluations were recorded on May 28, 2026. Version and maintenance observations describe that date. They cover three working CLI proofs of concept and two menu bar apps.
 
 ## TL;DR
 

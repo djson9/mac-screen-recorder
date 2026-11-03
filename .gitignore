@@ -1,6 +1,18 @@
 # Recorded output artifacts (proof-of-concept videos, may contain desktop content)
 *.mp4
 *.mov
+*.m4v
+*.webm
+*.mkv
+*.avi
+
+# Local credentials, capture logs, and generated app bundles
+.env
+.env.*
+*.har
+*.log
+*.app/
+*.dmg
 
 # Node
 node_modules/
